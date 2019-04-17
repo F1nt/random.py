@@ -1,0 +1,16 @@
+print('общество 21 века')
+age = int(input('введите ваш возраст'))
+if age <= 7:
+  print('вам в десткий сад')
+elif age >= 7 and age < 18:
+ print('вам в школу')
+elif age >= 18 and age < 25:
+  print('вам в университет')
+elif age >= 25 and age < 60:
+  print('вам на работу')
+elif age >= 60 and age < 120:
+  print('у вас есть выбор')
+else:
+  for i in range(5):
+   print('ошибка')
+
