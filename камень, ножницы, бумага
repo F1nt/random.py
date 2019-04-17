@@ -1,0 +1,52 @@
+import random
+computer = random.randint(1, 3)
+player = ("камень, ножницы, бумага")
+if computer == 1:
+    comp_choice = "камень"
+elif computer == 2:
+    comp_choice = "ножницы"
+else:
+    comp_choice = "бумагу"
+print('—————PELYAK GAME—————')
+print('Игра камень|ножницы|бумага')
+print('1 — камень, 2 — ножницы, 3 — бумага.')
+try:
+    x = int(input("введите число:"))
+    if x == 1:
+        print("")
+        print("ты выбрал камень")
+        print("компьютер выбрал: " + str(comp_choice))
+        print("")
+        if computer == 1:
+            print('ничья')
+        elif computer == 2:
+            print('Ты выиграл')
+        else:
+            print('ты проиграл')
+        print("")
+    elif x == 2:
+        print("")
+        print("ты выбрал ножницы")
+        print("компьютер выбрал: " + str(comp_choice))
+        if computer == 1:
+            print('ты выиграл')
+        elif computer == 2:
+            print('ничья')
+        else:
+            print('ты выиграл')
+        print("")
+    elif x == 3:
+        print("")
+        print("ты выбрал бумагу")
+        print("компьютер выбрал: " + str(comp_choice))
+        if computer == 1:
+            print('ты выиграл')
+        elif computer == 2:
+            print('ты проиграл')
+        else:
+            print('ничья')
+        print("")
+    else:
+        print('ошибка')
+except:
+    print('Ошибка')
